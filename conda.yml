@@ -1,0 +1,7 @@
+name: orion-kl
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - poetry
+prefix: /home/kelvin/miniconda3/envs/orion-kl
