@@ -32,23 +32,4 @@ for more details.
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 This version of the cookiecutter template is modified by Kelvin Lee.
 
-## Developer workflow
-
-Because we're working in a team, we should adopt some reasonably good practices with sharing
-a common codebase. Primarily this means no peeing in the pool, and putting code into functions
-that others can use with reasonable documentation.
-
-Since we're using git, we can adopt some good practices quite easily: work off your own branch,
-and when someone has made code contributions, submit a pull request; here's the workflow:
-
-1. Fork the repository to your account, and then clone it to your computer.
-1. After setting everything up, run `git branch -b name-of-branch`; for ease I would just use your name.
-    - This means that everything you do is spinning off the `main` branch, and you won't accidentally add things to it.
-2. Install `git` pre-hooks using `pre-commit install`
-2. Write some code in `orion-kl`, make modules, tests, whatever. Add these changes to the `git` tracking with `git add all-the-files-you-want-to-add`.
-3. Commit your changes, and commit often. Run `git commit` and it'll bring up a text editor that you can write:
-    - A short "title" message describing what's been done at a glance.
-    - A longer optional message that goes into more detail.
-4. If the hooks are installed correctly, it will run some checks; if your commit stops abruptly, it means something was changed by hooks, probably `black` formatting. Just add the files changed and re-commit.
-4. Run `git push` to send your changes up to your github repository.
-5. Go to your repository on the web, and a "Pull Request" button should appear.
+## Instructions
