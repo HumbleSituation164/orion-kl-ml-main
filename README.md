@@ -29,7 +29,7 @@ You can test that the environment is working by running `ipython` and trying:
 This uses the newly developed seq2seq model, `VICGAE`, with details forthcoming. See the [repo](https://github.com/laserkelvin/astrochem_embedding)
 for more details.
 
---------
+===========================
 
 
 
