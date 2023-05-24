@@ -1,7 +1,13 @@
 orion-kl-ml
 ==============================
 
-ML analysis of Orion KL
+This repository includes the codebase for the machine leanring pipelines developed and applied to predicting chemical abundances of unobserved species in the Orion KL nebula. 
+
+If you used the results generated from this work as part of your own research, please cite the zenodo repository 
+
+<a href="https://doi.org/10.5281/zenodo.7675609"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7675609.svg" alt="DOI"></a>
+
+ and the paper once published. In the meantime, please cite this repository. 
 
 ## Installation
 
