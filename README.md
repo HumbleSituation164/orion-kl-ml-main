@@ -1,6 +1,6 @@
 **this repository is currently under construction**
 
-Explaination of chemical inventories with machine learning
+# Explaination of chemical inventories with machine learning
 ## orion-kl-ml
 ==============================
 
