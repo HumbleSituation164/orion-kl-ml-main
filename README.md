@@ -36,7 +36,7 @@ for more details.
 ## Instructions
 
 
-# Counterfactual generation
+### Counterfactual generation
 
 
 
