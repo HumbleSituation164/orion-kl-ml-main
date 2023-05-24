@@ -1,7 +1,7 @@
 **this repository is currently under construction**
 
-# Explaination of chemical inventories with machine learning
-## orion-kl-ml
+Explaination of chemical inventories with machine learning
+
 ==============================
 
 This repository includes the codebase for the machine leanring pipelines developed and applied to predicting chemical abundances of unobserved species in the Orion KL nebula. 
