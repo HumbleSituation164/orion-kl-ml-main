@@ -31,7 +31,14 @@ for more details.
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
-This version of the cookiecutter template is modified by Kelvin Lee.
+
 
 ## Instructions
+
+
+
+
+--------
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+This version of the cookiecutter template is modified by Kelvin Lee.
