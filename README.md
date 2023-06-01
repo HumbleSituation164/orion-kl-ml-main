@@ -38,10 +38,12 @@ for more details.
 ## Instructions
 
 
-### Column Density Predictions
+### Predicting column denisties
 
 
-### Counterfactual generation
+### Generating counterfactuals
+
+This step uses a modified version of the exmol package developed by the White group. Please see their [publication](https://doi.org/10.1039/D1SC05259D ) and [repository](https://github.com/ur-whitelab/exmol) for more details. 
 
 
 
