@@ -49,6 +49,11 @@ This step uses a modified version of the exmol package developed by the White gr
 
 
 --------
+## License
+Distributed under the terms of the [MIT license](https://opensource.org/license/mit/)
 
+## Issues
+
+## Credits
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 This version of the cookiecutter template is modified by Kelvin Lee.
