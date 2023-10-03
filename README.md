@@ -10,7 +10,7 @@ The corresponding [dataset](https://doi.org/10.5281/zenodo.7675609) can be downl
 If you used the results generated from this work as part of your own research, please cite the [zenodo repository](https://doi.org/10.5281/zenodo.7675609) and the paper once published. In the meantime, please cite this repository. 
 
 ## Requriements
-This package requires Python 3.8+, as the embedder uses some decorators only available after 3.7.
+This package requires Python 3.8+, as the embedding package uses some decorators only available after 3.7.
 
 ## Installation
 
