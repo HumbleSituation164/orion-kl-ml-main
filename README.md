@@ -2,7 +2,7 @@
 
 Explanation of chemical inventories with machine learning
 ==============================
-<a href="#" class="button">This is a Button</a>
+<button class="button">This is a Button</button>
 
 This repository includes the codebase for the machine leanring pipelines developed and applied to predicting chemical abundances of unobserved interstellar species. This work focuses on the Orion Kleinmann-Low (Orion KL) nebula and its respective environments. 
 
@@ -10,7 +10,7 @@ The corresponding [dataset](https://doi.org/10.5281/zenodo.7675609) can be downl
 
 If you used the results generated from this work as part of your own research, please cite the [zenodo repository](https://doi.org/10.5281/zenodo.7675609) and the paper once published. In the meantime, please cite this repository. 
 
-## Requriements
+## Requirements
 This package requires Python 3.8+, as the embedding package uses some decorators only available after 3.7.
 
 ## Installation
