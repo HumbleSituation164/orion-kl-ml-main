@@ -3,6 +3,9 @@
 Explanation of chemical inventories with machine learning
 ==============================
 
+https://img.shields.io/badge/python-3.8%20%7C%203.9-blue
+https://img.shields.io/badge/license-MIT-green
+
 
 This repository includes the codebase for the machine leanring pipelines developed and applied to predicting chemical abundances of unobserved interstellar species. This work focuses on the Orion Kleinmann-Low (Orion KL) nebula and its respective environments. 
 
@@ -32,8 +35,23 @@ You can test that the environment is working by running `ipython` and trying:
 >>> embed_smiles_batch(smiles)
 ```
 
-This uses the newly developed seq2seq model, `VICGAE`, with details forthcoming. See the [repo](https://github.com/laserkelvin/astrochem_embedding)
-for more details.
+This uses the newly developed seq2seq model, `VICGAE`. Here is a quick installation and use guide to get you started, but see the [repo](https://github.com/laserkelvin/astrochem_embedding)
+for more details if you're interested in development or training your own model.
+
+### VICGAE molecular embedder installation and usage
+
+`astrochem_embedding` can be installed quickly through PyPI:
+```python
+$ pip install astrochem_embedding
+```
+
+You can check the environment using a pre-trained model:
+```python
+>>> from astrochem_embedding import VICGAE
+>>> import torch
+>>> model = VICGAE.from_pretrained()
+>>> model.embed_smiles("c1ccccc1")
+```
 
 ===========================
 
@@ -48,6 +66,7 @@ for more details.
 This step uses a modified version of the exmol package developed by the White group. Please see their [publication](https://doi.org/10.1039/D1SC05259D ) and [repository](https://github.com/ur-whitelab/exmol) for more details. 
 
 
+## Project Structure
 
 --------
 ## License
