@@ -3,8 +3,9 @@
 Explanation of chemical inventories with machine learning
 ==============================
 
-https://img.shields.io/badge/python-3.8%20%7C%203.9-blue
-https://img.shields.io/badge/license-MIT-green
+![Static Badge](https://img.shields.io/badge/pyhton-3.8%20%7C%203.9-blue)
+![Static Badge](https://img.shields.io/badge/license-MIT-green)
+
 
 
 This repository includes the codebase for the machine leanring pipelines developed and applied to predicting chemical abundances of unobserved interstellar species. This work focuses on the Orion Kleinmann-Low (Orion KL) nebula and its respective environments. 
