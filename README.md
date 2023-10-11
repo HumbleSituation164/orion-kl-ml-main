@@ -4,8 +4,8 @@ Explaining chemical inventories with machine learning
 ==============================
 
 ![Static Badge](https://img.shields.io/badge/python-3.8%20%7C%203.9-blue)
-![Static Badge](https://img.shields.io/badge/license-MIT-green)
 ![Static Badge](https://img.shields.io/badge/pypi-v0.2.0-yellow)
+![Static Badge](https://img.shields.io/badge/license-MIT-green)
 ![Static Badge](https://img.shields.io/badge/code%20style-black-black)
 
 
