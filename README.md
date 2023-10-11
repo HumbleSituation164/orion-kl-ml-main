@@ -1,6 +1,6 @@
 **NOTE: this repository is currently under construction**
 
-Explanation of chemical inventories with machine learning
+Explaining chemical inventories with machine learning
 ==============================
 
 ![Static Badge](https://img.shields.io/badge/pyhton-3.8%20%7C%203.9-blue)
