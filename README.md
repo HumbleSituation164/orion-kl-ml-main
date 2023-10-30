@@ -87,6 +87,50 @@ This step uses a modified version of the `exmol` package developed by the White 
 
 ## Project Structure
 
+├── CITATION.cff
+├── LICENSE
+├── data
+│   ├── processed
+│   └── raw
+├── models
+│   ├── gbr.pkl
+│   ├── rfr.pkl
+│   ├── translator.yml
+│   └── translator_no_iso.yml
+├── notebooks
+│   ├── dev
+│   ├── exploratory
+│   └── reports
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+├── scripts
+│   ├── embed_molecules.py
+│   └── make_counterfactuals.py
+└── src
+   └── orion_kl_ml
+      ├── __init__.py
+      ├── models
+      │   ├── __init__.py
+      │   ├── base.py
+      │   ├── embed.py
+      │   ├── layers.py
+      │   └── tests
+      │       ├── __init__.py
+      │       └── test_embed.py
+      ├── pipeline
+      │   ├── data.py
+      │   ├── __init__.py
+      │   ├── tests
+      │   │   ├── __init__.py
+      │   ├── make_dataset.py
+      │   └── transforms.py
+      ├── visualization
+      │   ├── __init__.py
+      │   └── visualize.py
+      ├── __main__.py
+      └── utils.py
+
 --------
 ## License
 Distributed under the terms of the [MIT license](https://opensource.org/license/mit/)
