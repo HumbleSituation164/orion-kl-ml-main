@@ -86,7 +86,7 @@ This step uses a modified version of the `exmol` package developed by the White 
 
 
 ## Project Structure
-
+.
 ├── CITATION.cff
 ├── LICENSE
 ├── data
