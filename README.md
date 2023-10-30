@@ -86,7 +86,17 @@ This step uses a modified version of the `exmol` package developed by the White 
 
 
 ## Project Structure
+
 .
+├── ...
+├── docs                    # Documentation files (alternatively `doc`)
+│   ├── TOC.md              # Table of contents
+│   ├── faq.md              # Frequently asked questions
+│   ├── misc.md             # Miscellaneous information
+│   ├── usage.md            # Getting started guide
+│   └── ...                 # etc.
+└── ...
+
 ├── CITATION.cff
 ├── LICENSE
 ├── data
