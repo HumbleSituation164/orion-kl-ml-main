@@ -87,91 +87,54 @@ This step uses a modified version of the `exmol` package developed by the White 
 
 ## Project Structure
 
-├── CITATION.cff
+var routes = (
+  <Route name='CITATION.cff'>
+  <Route name='LICENSE'>
+  <Route name='data'>
+    <Route name='processed'/>
+    <Route name='raw'/>
+  <Route name='models'>
+    <Route name='gbr.pkl'/>
+    <Route name='rfr.pkl'/>
+    <Route name='translator.yml'/>
+    <Route name='translator_no_iso.yml'/>
+  <Route name='notebooks'>
+    <Route name='dev'/>
+    <Route name='exploratory'/>
+    <Route name='reports'/>
+  <Route name='poetry.lock'>
+  <Route name='pyproject.toml'>
+  <Route name='README.md'>
+  <Route name='scripts'>
+    <Route name='embed_molecules.py'/>
+    <Route name='make_counterfactuals.py'/>
+  <Route name='src'>
+    <Route name='orion_kl_ml'>
+       <Route name='__init__.py'/>
+       <Route name='models'>
+          <Route name='__init__.py'/>
+          <Route name='base.py'/>
+          <Route name='embed.py'/>
+          <Route name='layers.py'/>
+          <Route name='tests'>
+             <Route name='__init__.py'>
+             <Route name='test_embed.py'>
+       <Route name='pipeline'>
+          <Route name='__init__.py'/>
+          <Route name='data.py'/>
+          <Route name='make_dataset.py'/>
+          <Route name='transforms.py'/>
+          <Route name='tests'>
+             <Route name='__init__.py'>    
+       <Route name='visualization'>
+          <Route name='__init__.py'/>
+          <Route name='visualize.py'/>
+       <Route name='__main__.py'>
+       <Route name='utils.py'>            
+  </Route>
+);
 
-├── LICENSE
 
-├── data
-
-│   ├── processed
-
-│   └── raw
-
-├── models
-
-│   ├── gbr.pkl
-
-│   ├── rfr.pkl
-
-│   ├── translator.yml
-
-│   └── translator_no_iso.yml
-
-├── notebooks
-
-│   ├── dev
-
-│   ├── exploratory
-
-│   └── reports
-
-├── poetry.lock
-
-├── pyproject.toml
-
-├── README.md
-
-├── scripts
-
-│   ├── embed_molecules.py
-
-│   └── make_counterfactuals.py
-
-└── src
-
-   └── orion_kl_ml
-   
-      ├── __init__.py
-      
-      ├── models
-      
-      │   ├── __init__.py
-      
-      │   ├── base.py
-      
-      │   ├── embed.py
-      
-      │   ├── layers.py
-      
-      │   └── tests
-      
-      │       ├── __init__.py
-      
-      │       └── test_embed.py
-      
-      ├── pipeline
-      
-      │   ├── data.py
-      
-      │   ├── __init__.py
-      
-      │   ├── tests
-      
-      │   │   ├── __init__.py
-      
-      │   ├── make_dataset.py
-      
-      │   └── transforms.py
-      
-      ├── visualization
-      
-      │   ├── __init__.py
-      
-      │   └── visualize.py
-      
-      ├── __main__.py
-      
-      └── utils.py
    
 
 --------
