@@ -85,58 +85,6 @@ Once you have a trained regressor of choice, you can compile your molecules of i
 This step uses a modified version of the `exmol` package developed by the White group. Please see their [publication](https://doi.org/10.1039/D1SC05259D ) and [repository](https://github.com/ur-whitelab/exmol) for more details. This step isn't necessary, but does provide a chance to make some interesting constrastive examples to explore the interpretbility of detectibility for molecules. Essentially, this modified script will take a molecule of choice, make minor mutations to the base structure via addition, subtraction, or swapping, and generate that new counterfactual structure. This first portion does not neccessarily need our pipeline, however, `exmol` can output the corresponding SELFIES string to feed into a trained regressor and predict its column density. This method, although in it's infancy, can provide a means of a testable hypothesis in looking at correlations between functional groups and molecular structural components with thier abundance. 
 
 
-## Project Structure
-
-var routes = (
-  <Route name='CITATION.cff'>
-  <Route name='LICENSE'>
-  <Route name='data'>
-    <Route name='processed'/>
-    <Route name='raw'/>
-  <Route name='models'>
-    <Route name='gbr.pkl'/>
-    <Route name='rfr.pkl'/>
-    <Route name='translator.yml'/>
-    <Route name='translator_no_iso.yml'/>
-  <Route name='notebooks'>
-    <Route name='dev'/>
-    <Route name='exploratory'/>
-    <Route name='reports'/>
-  <Route name='poetry.lock'>
-  <Route name='pyproject.toml'>
-  <Route name='README.md'>
-  <Route name='scripts'>
-    <Route name='embed_molecules.py'/>
-    <Route name='make_counterfactuals.py'/>
-  <Route name='src'>
-    <Route name='orion_kl_ml'>
-       <Route name='__init__.py'/>
-       <Route name='models'>
-          <Route name='__init__.py'/>
-          <Route name='base.py'/>
-          <Route name='embed.py'/>
-          <Route name='layers.py'/>
-          <Route name='tests'>
-             <Route name='__init__.py'>
-             <Route name='test_embed.py'>
-       <Route name='pipeline'>
-          <Route name='__init__.py'/>
-          <Route name='data.py'/>
-          <Route name='make_dataset.py'/>
-          <Route name='transforms.py'/>
-          <Route name='tests'>
-             <Route name='__init__.py'>    
-       <Route name='visualization'>
-          <Route name='__init__.py'/>
-          <Route name='visualize.py'/>
-       <Route name='__main__.py'>
-       <Route name='utils.py'>            
-  </Route>
-);
-
-
-   
-
 --------
 ## License
 Distributed under the terms of the [MIT license](https://opensource.org/license/mit/)
