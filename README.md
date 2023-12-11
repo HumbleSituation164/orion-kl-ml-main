@@ -21,6 +21,8 @@ This package requires Python 3.8+, as the embedding package uses some decorators
 
 ## Installation
 
+### Conda environment
+
 1. Use `conda` to install from the YAML specification with `conda env create -f conda.yml`
 2. Activate the environment by typing `conda activate orion-kl`
 3. Install the Python requirements using `poetry install`
@@ -69,20 +71,22 @@ Our goal was to make this project modular so that the pieces (embedder, regresso
 ### Molecule embedding
 
 1. Collect all SMILES strings for your molecules and put them into a single `.csv` file. Alternatively, the `VICGAE` embedder also accepts SELFIES string, so you could compile your `.csv` file as SELFIES instead, if you prefer.
-2. Transform your SMILES strings into vectors using the embedding pipeline. The script `scripts/embed_molecules.py` contains the functions you will need to do this, or you can check out the notebook for a working example.
+2. Transform your SMILES strings into vectors using the embedding pipeline. The script `pipeline/embed_molecules.py` contains the functions you will need to do this, or you can check out the notebook for a working example.
    Note: if you would like to use the pretrained `VICGAE` embedder, you can fork the repo at [laserkelvin/astrochem_embedding](https://github.com/laserkelvin/astrochem_embedding).
 
 ### Training the regressors
 
-With the embedding pipeline set up and the molecular embedding vectors acquired, we can now train a regressor to predict the column density of your molecule (or molecules) of choice. We advise you set up a `.csv` file or other machine readable format that holds all of the molecules, their embeddings, column densities, and other physical features as needed (e.g. velocity components, line widths). The codebase is available in the script `scripts/train_models.py`, or you can use one of the pretrained regressors stored as a pickle under `models/`. You can also train (with modification) other regressors available through scikit-learn packages. Our notebook provides a working example if you would like to go this route.
+With the embedding pipeline set up and the molecular embedding vectors acquired, we can now train a regressor to predict the column density of your molecule (or molecules) of choice. We advise you set up a `.csv` file or other machine readable format that holds all of the molecules, their embeddings, column densities, and other physical features as needed (e.g. velocity components, line widths). The codebase for model training will be become avaiable in the future; in the meantime you can use one of the pretrained regressors stored as a pickle under `models/`. You can also train (with modification) other regressors available through scikit-learn packages. Future notebooks will provide a working example if you would like to go this route.
 
 ### Predicting column denisties
 
-Once you have a trained regressor of choice, you can compile your molecules of interest into a `.csv` file with their SMILES and/or SELFIES strings. The script `scripts/make_predictions.py` will generate the simulated parameters for your targets to generate your predictions for a chosen region in Orion KL.
+Once you have a trained regressor of choice, you can compile your molecules of interest into a `.csv` file with their SMILES and/or SELFIES strings. The script `pipeline/predictions.py` will generate the simulated parameters for your targets to generate your predictions for a chosen region in Orion KL.
 
 ### Generating counterfactuals
 
-This step uses a modified version of the `exmol` package developed by the White group. Please see their [publication](https://doi.org/10.1039/D1SC05259D ) and [repository](https://github.com/ur-whitelab/exmol) for more details. This step isn't necessary, but does provide a chance to make some interesting constrastive examples to explore the interpretbility of detectibility for molecules. Essentially, this modified script will take a molecule of choice, make minor mutations to the base structure via addition, subtraction, or swapping, and generate that new counterfactual structure. This first portion does not neccessarily need our pipeline, however, `exmol` can output the corresponding SELFIES string to feed into a trained regressor and predict its column density. This method, although in it's infancy, can provide a means of a testable hypothesis in looking at correlations between functional groups and molecular structural components with thier abundance. 
+This step uses a modified version of the `exmol` package developed by the White group. Please see their [publication](https://doi.org/10.1039/D1SC05259D ) and [repository](https://github.com/ur-whitelab/exmol) for more details. This step isn't necessary, but does provide a chance to make some interesting constrastive examples to explore the interpretbility of detectibility for molecules. Essentially, this modified script will take a molecule of choice, make minor mutations to the base structure via addition, subtraction, or swapping, and generate that new counterfactual structure. This first portion does not neccessarily need our pipeline, however, `exmol` can output the corresponding SELFIES string to feed into a trained regressor and predict its column density. This method, although in it's infancy, can provide a means of a testable hypothesis in looking at correlations between functional groups and molecular structural components with their abundance. 
+
+Note: Codebase and use of the modified `exmol` package will be provifed in future source code and notebooks. Until then, please see the [commits log](https://github.com/ur-whitelab/exmol/compare/main...HumbleSituation164:exmol:main) to see the changes and adjustments made for our branch.
 
 
 --------
