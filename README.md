@@ -1,4 +1,4 @@
-**NOTE: this repository is currently under construction**
+**NOTE: this repository is currently under construction - please check back for updates**
 
 Explaining chemical inventories with machine learning
 ==============================
